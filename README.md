@@ -1,5 +1,10 @@
 # Rare Disease Diagnostic Agent
 
+
+![Architecture Infographic](docs/images/infographic.jpg)
+
+*Source: [rare-disease-diagnostic-agent](https://github.com/ajones1923/rare-disease-diagnostic-agent)*
+
 RAG-powered rare disease diagnostic intelligence agent for the HCLS AI Factory.
 Provides differential diagnosis, ACMG/AMP variant interpretation, HPO-based
 phenotype matching, therapeutic option search, and clinical trial eligibility
