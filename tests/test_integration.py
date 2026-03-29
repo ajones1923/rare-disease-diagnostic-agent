@@ -10,7 +10,6 @@ Date: March 2026
 import sys
 from pathlib import Path
 
-import pytest
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 SCRIPTS_DIR = PROJECT_ROOT / "scripts"
@@ -19,11 +18,10 @@ if str(SCRIPTS_DIR) not in sys.path:
 
 from config.settings import RareDiseaseSettings
 from src.models import DiagnosticWorkflowType
-from src.ingest.omim_parser import OMIMParser, OMIM_DISEASES
-from src.ingest.hpo_parser import HPOParser, HPO_TERMS
-from src.ingest.orphanet_parser import OrphanetParser, ORPHANET_DISEASES
-from src.ingest.gene_therapy_parser import GeneTherapyParser, ALL_GENE_THERAPIES
-from src.ingest.base import IngestRecord
+from src.ingest.omim_parser import OMIMParser
+from src.ingest.hpo_parser import HPOParser
+from src.ingest.orphanet_parser import OrphanetParser
+from src.ingest.gene_therapy_parser import GeneTherapyParser
 from src.export import RareDiseaseReportExporter
 from scripts.setup_collections import COLLECTION_SCHEMAS
 

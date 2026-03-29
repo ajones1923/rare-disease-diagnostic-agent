@@ -16,7 +16,7 @@ import argparse
 import logging
 import sys
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Dict, List
 
 # Ensure project root is on path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent

@@ -17,13 +17,8 @@ from typing import Dict, List, Optional, Tuple
 
 from src.models import (
     ACMGClassification,
-    DiseaseCategory,
-    EvidenceLevel,
-    InheritancePattern,
-    SeverityLevel,
     TherapyMatch,
     TherapyStatus,
-    VariantType,
 )
 
 logger = logging.getLogger(__name__)

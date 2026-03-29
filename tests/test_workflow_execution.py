@@ -8,7 +8,7 @@ Date: March 2026
 
 import pytest
 
-from src.ingest.base import IngestRecord, IngestStats, BaseIngestParser
+from src.ingest.base import IngestRecord, IngestStats
 from src.ingest.omim_parser import OMIMParser
 from src.ingest.hpo_parser import HPOParser
 from src.ingest.orphanet_parser import OrphanetParser

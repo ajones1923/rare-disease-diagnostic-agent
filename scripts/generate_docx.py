@@ -21,9 +21,7 @@ headings, bold/italic runs, bullet and numbered lists, tables, code
 blocks, and horizontal rules.
 """
 
-import os
 import re
-import sys
 from pathlib import Path
 
 try:

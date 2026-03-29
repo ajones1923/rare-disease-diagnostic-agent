@@ -9,7 +9,6 @@ Author: Adam Jones
 Date: March 2026
 """
 
-import pytest
 
 from config.settings import RareDiseaseSettings
 

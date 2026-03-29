@@ -17,7 +17,6 @@ WorkflowEngine for unified dispatch.
 from __future__ import annotations
 
 import logging
-import math
 from abc import ABC, abstractmethod
 from datetime import datetime, timezone
 from typing import Dict, List, Optional
@@ -28,12 +27,10 @@ from src.models import (
     DiseaseCategory,
     DiagnosticResult,
     DiagnosticWorkflowType,
-    EvidenceLevel,
     InheritancePattern,
     SeverityLevel,
     TherapyMatch,
     TherapyStatus,
-    Urgency,
     VariantClassification,
     VariantType,
     WorkflowResult,
@@ -1348,7 +1345,7 @@ class ConnectiveTissueWorkflow(BaseRareDiseaseWorkflow):
             ectopia_lentis = ghent.get("ectopia_lentis", False)
             systemic_score = ghent.get("systemic_score", 0)
             fbn1_mutation = ghent.get("fbn1_mutation", False)
-            fh = ghent.get("family_history", False)
+            ghent.get("family_history", False)
 
             marfan_met = False
 
@@ -1551,7 +1548,7 @@ class InbornErrorsWorkflow(BaseRareDiseaseWorkflow):
                     recommendations.append(f"Confirm with {deficiency_info['gene']} gene sequencing")
                     severity = _max_severity(severity, SeverityLevel.HIGH)
                 elif isinstance(activity, (int, float)) and activity < 30:
-                    findings.append(f"  REDUCED: possible carrier or partial deficiency")
+                    findings.append("  REDUCED: possible carrier or partial deficiency")
                     recommendations.append(f"Consider {deficiency_info['gene']} gene sequencing")
                     severity = _max_severity(severity, SeverityLevel.MODERATE)
             else:

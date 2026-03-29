@@ -6,7 +6,6 @@ Author: Adam Jones
 Date: March 2026
 """
 
-import pytest
 
 from src.ingest.omim_parser import OMIM_DISEASES
 from src.ingest.hpo_parser import HPO_TERMS

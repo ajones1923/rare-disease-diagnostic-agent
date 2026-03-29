@@ -12,10 +12,9 @@ Date: March 2026
 import json
 import uuid
 from datetime import datetime, timezone
-from typing import Dict, List, Optional
+from typing import Optional
 
 from fastapi import APIRouter, HTTPException, Request
-from fastapi.responses import JSONResponse, PlainTextResponse
 from loguru import logger
 from pydantic import BaseModel, Field
 
@@ -66,7 +65,7 @@ def _generate_markdown_header(title: str, disease_id: Optional[str] = None, pati
         f"# {title}",
         "",
         f"**Generated:** {now}",
-        f"**Agent:** Rare Disease Diagnostic Agent v1.0.0",
+        "**Agent:** Rare Disease Diagnostic Agent v1.0.0",
     ]
     if disease_id:
         lines.append(f"**Disease ID:** {disease_id}")
@@ -279,7 +278,7 @@ async def generate_report(request: ReportRequest, req: Request):
                 styles = getSampleStyleSheet()
                 navy = HexColor("#1B2333")
                 teal = HexColor("#1AAFCC")
-                green = HexColor("#76B900")
+                HexColor("#76B900")
 
                 title_style = ParagraphStyle("RDTitle", parent=styles["Title"],
                                              textColor=navy, fontSize=18, spaceAfter=12)

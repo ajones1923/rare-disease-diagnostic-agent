@@ -485,7 +485,6 @@ async def diagnose(request: DiagnoseRequest, req: Request):
             from src.knowledge import (
                 METABOLIC_DISEASES, NEUROLOGICAL_DISEASES, CONNECTIVE_TISSUE_DISEASES,
                 HEMATOLOGIC_DISEASES, IMMUNOLOGIC_DISEASES, CANCER_PREDISPOSITION,
-                GENE_THERAPY_APPROVED, DIAGNOSTIC_ALGORITHMS,
             )
             search_lower = query.lower()
             kb_entries = []
