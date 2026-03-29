@@ -143,7 +143,7 @@ ENTITY_ALIASES: Dict[str, str] = {
     "BRCA2": "breast cancer 2",
     "RPE65": "retinal pigment epithelium 65",
     "MECP2": "methyl-CpG binding protein 2",
-    "DMD": "dystrophin",
+    "DMD": "dystrophin",  # noqa: F601
     "F8": "coagulation factor VIII",
     "F9": "coagulation factor IX",
     # --- Clinical terms ---
