@@ -124,3 +124,7 @@ python3 -c "from api.main import app; print(app.title)"
 ## Author
 
 Adam Jones -- HCLS AI Factory, March 2026
+
+## License
+
+This project is licensed under the [Apache License 2.0](LICENSE).
